@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Study/BC/elevator/elevator.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Study/BC/elevator/elevator.srcs/sim_1/new/sim.v,1668484229,verilog,,,,sim,,,,,,,,
+D:/Study/BC/elevator/elevator.srcs/sim_1/new/sim_button.v,1668449184,verilog,,,,sim_button,,,,,,,,
+D:/Study/BC/elevator/elevator.srcs/sources_1/new/button.v,1668449125,verilog,,D:/Study/BC/elevator/elevator.srcs/sim_1/new/sim_button.v,,button,,,,,,,,
+D:/Study/BC/elevator/elevator.srcs/sources_1/new/pulse_3sec.v,1668484062,verilog,,D:/Study/BC/elevator/elevator.srcs/sim_1/new/sim.v,,pulse_3sec,,,,,,,,

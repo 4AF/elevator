@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Nov 17 22:33:01 2022
+# Process ID: 25280
+# Current directory: D:/ComputerExp/elevator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13324 D:\ComputerExp\elevator\elevator.xpr
+# Log file: D:/ComputerExp/elevator/vivado.log
+# Journal file: D:/ComputerExp/elevator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ComputerExp/elevator/elevator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1002.773 ; gain = 109.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_module' [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_100Hz' [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/clk_100Hz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_100Hz' (1#1) [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/clk_100Hz.v:23]
+INFO: [Synth 8-638] synthesizing module 'main_control' [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:23]
+	Parameter stay bound to: 2'b00 
+	Parameter up bound to: 2'b01 
+	Parameter down bound to: 2'b10 
+	Parameter stop_1 bound to: 4'b0000 
+	Parameter stop_2 bound to: 4'b0001 
+	Parameter stop_3 bound to: 4'b0010 
+	Parameter stop_4 bound to: 4'b0011 
+	Parameter up_12 bound to: 4'b0100 
+	Parameter up_23 bound to: 4'b0101 
+	Parameter up_34 bound to: 4'b0110 
+	Parameter down_43 bound to: 4'b0111 
+	Parameter down_32 bound to: 4'b1000 
+	Parameter down_21 bound to: 4'b1001 
+	Parameter n bound to: 299 - type: integer 
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:72]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:81]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:89]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:97]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:159]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:169]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:167]
+WARNING: [Synth 8-290] fork/join block will be implemented as sequential block [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:181]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:157]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:274]
+INFO: [Synth 8-256] done synthesizing module 'main_control' (2#1) [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/main_control.v:23]
+INFO: [Synth 8-638] synthesizing module 'shumaguan' [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/shumaguan.v:45]
+INFO: [Synth 8-256] done synthesizing module 'shumaguan' (3#1) [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/shumaguan.v:45]
+INFO: [Synth 8-256] done synthesizing module 'top_module' (4#1) [D:/ComputerExp/elevator/elevator.srcs/sources_1/new/top_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1044.105 ; gain = 151.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1044.105 ; gain = 151.250
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ComputerExp/elevator/elevator.srcs/constrs_1/new/yueshu.xdc]
+Finished Parsing XDC File [D:/ComputerExp/elevator/elevator.srcs/constrs_1/new/yueshu.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1371.945 ; gain = 479.090
+19 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1371.945 ; gain = 479.090
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Nov 17 22:41:01 2022] Launched synth_1...
+Run output will be captured here: D:/ComputerExp/elevator/elevator.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Nov 17 22:41:30 2022] Launched impl_1...
+Run output will be captured here: D:/ComputerExp/elevator/elevator.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Nov 17 22:42:11 2022] Launched impl_1...
+Run output will be captured here: D:/ComputerExp/elevator/elevator.runs/impl_1/runme.log
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 22:42:52 2022...
