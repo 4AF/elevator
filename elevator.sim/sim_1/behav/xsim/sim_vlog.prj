@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../elevator.srcs/sources_1/new/pulse_3sec.v" \
+"../../../../elevator.srcs/sources_1/new/clk_100Hz.v" \
 "../../../../elevator.srcs/sim_1/new/sim.v" \
 
 # compile glbl module

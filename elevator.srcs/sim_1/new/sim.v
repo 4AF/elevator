@@ -23,12 +23,11 @@
 module sim(
 
     );
-    reg clk,rst;
-    wire clk_3s;
+    reg clk;
+    wire clk_100Hz;
     
     initial begin 
-        clk=1;rst=1;
-        #1 rst=0;end
+        clk=1;end
     always #5 clk=~clk;
-    pulse_3sec u(.clk(clk),.rst(rst),.clk_3s(clk_3s));
+    clk_100Hz u(.clk(clk),.clk_100Hz(clk_100Hz));
 endmodule
